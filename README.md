@@ -12,7 +12,13 @@ Note: This modifier currently only works for mesh based particles. If you requir
 - `delete_sub_particles` / "Delete sub-particles": Delete the sub-particles originally found in the DataCollection.
 
 ## Example
-[[Usage example]]
+Seperate sub-particles after a normal file import:
+
+![Example 01](examples/unmerged_sub-particles.png)
+
+Merged bodies from the `Reconstruct Aspherix Bodies` modifier:
+
+![Example 02](examples/merged_particles.png)
 
 ## Installation
 - OVITO Pro [integrated Python interpreter](https://docs.ovito.org/python/introduction/installation.html#ovito-pro-integrated-interpreter):
