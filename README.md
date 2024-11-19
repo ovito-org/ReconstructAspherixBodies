@@ -7,9 +7,12 @@ The [Aspherix](https://www.aspherix-dem.com/) DEM software can output concave pa
 Note: This modifier currently only works for mesh based particles. If you require multi-sphere particles please open a GitHub issue.
 
 ## Parameters 
-- `body_color` / "Static color": Single solid color applied to each newly created particle.
-- `random_color` / "Random colors": Apply a random color to each unique body.
-- `delete_sub_particles` / "Delete sub-particles": Delete the sub-particles originally found in the DataCollection.
+
+| GUI name                 | Python name            | Description                                                      | Default Value                       |
+|--------------------------|------------------------|------------------------------------------------------------------|-------------------------------------|
+| **Static color**         | `body_color`           | Single solid color applied to each newly created particle.       | `(255 / 255, 102 / 255, 102 / 255)` |
+| **Random colors**        | `random_color`         | Apply a random color to each unique body.                        | `False`                             |
+| **Delete sub-particles** | `delete_sub_particles` | Delete the sub-particles originally found in the DataCollection. | `True`                              |
 
 ## Example
 Seperate sub-particles after a normal file import:
