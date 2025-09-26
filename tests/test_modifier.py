@@ -21,9 +21,7 @@ def compare_dicts(dict1, dict2, path=""):
 
 
 def test_ReconstructAspherixBodies():
-    pipeline = import_file(
-        "https://gitlab.com/ovito-org/ovito-sample-data/-/raw/master/Aspherix/facetted_convex_concave/aspherix_simulation.pvd?ref_type=heads&inline=false"
-    )
+    pipeline = import_file("facetted_convex_concave/aspherix_simulation.pvd")
 
     # Reconstruct Aspherix Bodies:
     pipeline.modifiers.append(
