@@ -15,7 +15,7 @@ def compare_dicts(dict1, dict2, path=""):
             if isinstance(dict1[key], dict) and isinstance(dict2[key], dict):
                 compare_dicts(dict1[key], dict2[key], path + f"/{key}")
             else:
-                assert np.allclose(dict1[key], dict2[key])
+                assert np.allclose(np.ravel(dict1[key]), np.ravel(dict2[key]))
     for key in dict2:
         assert key in dict1
 
